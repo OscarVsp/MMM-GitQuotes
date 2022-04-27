@@ -1,0 +1,20 @@
+{
+  "name": "MMM-GitQuotes",
+  "version": "1.0.0",
+  "description": "GitQuote Catalog for MagicMirror²",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarVsp/MMM-GitQuotes"
+  },
+  "keywords": [
+    "MagicMirror",
+    "MagicMirror²",
+    "Quotes"
+  ],
+  "author": "salpar",
+  "license": "MIT",
+  "homepage": "https://github.com/OscarVsp/MMM-GitQuotes#readme",
+  "dependencies": {
+    "XMLHttpRequest": "latest"
+  }
+}
