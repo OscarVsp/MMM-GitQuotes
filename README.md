@@ -5,7 +5,7 @@ display the quotes from a json file on a github repository.
 
 ## Sample
 
-![alt text](https://github.com/OscarVsp/MMM-GitQuotes/raw/main/sample.png "Example")
+![alt text](https://github.com/OscarVsp/MMM-GitQuotes/raw/main/example.png "Example")
 
 ## Module installation
 
