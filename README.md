@@ -41,7 +41,7 @@ npm install
 |----------------- |----------- |-----------
 | `github_raw_url` | *Required* | The url of the json file on github (must be the raw url). <br /> **Type:** raw url <br /> **Default:** `https://raw.githubusercontent.com/OscarVsp/MMM-GitQuotes/main/quotes.json`
 | `updateInterval` | *Optional* | The interval of time for the update (in second). <br /> **Type:** int <br /> **Default:** `60` ==> 1 min.
-| `fadeSpeed` | *Optional* | The duration of the fade animation (in second). <br /> **Type:** int <br /> **Default:** `5` ==> 5 seconds.
+| `fadeSpeed` | *Optional* | The duration of the fade animation bewteen two quotes (in second). <br /> **Type:** int <br /> **Default:** `5` ==> 5 seconds.
 
 
 ## Attribution
