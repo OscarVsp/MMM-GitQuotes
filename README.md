@@ -43,7 +43,9 @@ npm install
 | `updateInterval` | *Optional* | The interval of time for the update (in second). <br /> **Type:** int <br /> **Default:** `60` ==> 1 min.
 | `fadeSpeed` | *Optional* | The duration of the fade animation bewteen two quotes (in second). <br /> **Type:** int <br /> **Default:** `5` ==> 5 seconds.
 
-The `github_raw_url` is not the same as the github url of the file. See on the image how to get it.
+**Raw URL**
+
+The `github_raw_url` is not the same as the github url of the file. See on the image below how to get it.
 
 ![alt text](https://github.com/OscarVsp/MMM-GitQuotes/raw/main/raw_url_example.png "Raw url")
 
