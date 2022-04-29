@@ -1,23 +1,20 @@
-/* global Module */
-
 /* MagicMirror²
- * Module: QuoteCatalog
+ * Module: MMM-GitQuotes
  *
- * Author: Sally Park
- * Version: v1.0 - February 2018
+ * Author: Oscar Van Slijpe
+ * Version: v1.0
  * MIT Licensed.
  */
 Module.register("MMM-GitQuotes",{
 
     // Module config defaults.
     defaults: {
-        updateInterval: 30,    // How often a new quote gets displayed.
+        updateInterval: 30,      // How often a new quote gets displayed.
         fadeSpeed: 30,           // How fast to fade out and back in when changing quotes.
-        github_raw_url: "https://raw.githubusercontent.com/OscarVsp/MMM-GitQuotes/main/quotes.json"
+        github_raw_url: "https://raw.githubusercontent.com/OscarVsp/MMM-GitQuotes/main/quotes.json"     //The RAW url !
     },
-
-    getJSON: function(url, callback){
-        //Get the json file from the github raw url
+    //Request the json file from the github raw url
+    getJSON: function(url, callback){ 
         var xmlhttprequest = new XMLHttpRequest();
         xmlhttprequest.open('GET', url, true);
         xmlhttprequest.responseType = 'json';
@@ -31,9 +28,8 @@ Module.register("MMM-GitQuotes",{
         };
         xmlhttprequest.send();
     },
-
-    getData: function(){
-        //Load the data
+    //Load the data into self.quotes
+    getData: function(){  
         var self = this
         self.getJSON(self.config.github_raw_url,  function(err, data) {
             if (err != null) {
@@ -41,7 +37,7 @@ Module.register("MMM-GitQuotes",{
                 self.error = true;
                 self.loaded = true;
             } else {
-                Log.info(data);
+                Log.info("Github Quotes loaded correctly");
                 self.quotes = data;
                 self.error = false;
                 self.loaded = true;
@@ -116,6 +112,7 @@ Module.register("MMM-GitQuotes",{
 
     // Override dom generator.
     getDom: function() {
+        //If not loaded yet
         if (this.loaded == false){
             var wrapper = document.createElement("div");
 
@@ -129,6 +126,7 @@ Module.register("MMM-GitQuotes",{
             wrapper.appendChild(quote);
 
             return wrapper;
+        //If loaded but there was an error while requesting the json file
         } else if (this.error == true){
             var wrapper = document.createElement("div");
 
@@ -142,6 +140,7 @@ Module.register("MMM-GitQuotes",{
             wrapper.appendChild(quote);
 
             return wrapper;
+        //If loaded correctly
         } else {
             var quoteText = this.randomQuote();
 
