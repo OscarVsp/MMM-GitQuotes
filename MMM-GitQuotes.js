@@ -120,7 +120,7 @@ Module.register("MMM-GitQuotes",{
             quote.className = "bright small light";
             quote.style.textAlign = 'justify';
             quote.style.margin = '0 auto';
-            quote.style.maxWidth = '400px';
+            quote.style.maxWidth = '800px';
             quote.innerHTML = "Loading quotes from github...";
 
             wrapper.appendChild(quote);
@@ -134,7 +134,7 @@ Module.register("MMM-GitQuotes",{
             quote.className = "bright small light";
             quote.style.textAlign = 'justify';
             quote.style.margin = '0 auto';
-            quote.style.maxWidth = '400px';
+            quote.style.maxWidth = '800px';
             quote.innerHTML = "Error loading quotes. Check 'github_raw_url' value.";
 
             wrapper.appendChild(quote);
@@ -153,7 +153,7 @@ Module.register("MMM-GitQuotes",{
             quote.className = "bright small light";
             quote.style.textAlign = 'justify';
             quote.style.margin = '0 auto';
-            quote.style.maxWidth = '400px';
+            quote.style.maxWidth = '800px';
             quote.innerHTML = qMsg;
 
             wrapper.appendChild(quote);
