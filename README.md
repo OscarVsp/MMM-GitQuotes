@@ -45,7 +45,7 @@ npm install
 
 **Raw URL**
 
-The `github_raw_url` is not the same as the github url of the file. See on the image below how to get it. The repository has to be public.
+The `github_raw_url` is not the same as the github url of the file. See on the image below how to get it. The repository must be public.
 
 ![alt text](https://github.com/OscarVsp/MMM-GitQuotes/raw/main/raw_url_example.png "Raw url")
 
